@@ -6,11 +6,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="{{pathFor 'postsList'}}">Travscope</a>
+			<a class="brand" href="{{pathFor 'home'}}">Travscope</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					{{#if currentUser}}<li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>
-					<li class="dropdown">
+					<li>
+						<a href="{{pathFor 'newPosts'}}">New</a>
+					</li>
+					<li>
+						<a href="pathFor 'bestPosts'}}">Best</a>
+					</li>
+					{{#if currentUser}}
+						<li>
+							<a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>
+						<li class="dropdown">
 						{{> notifications}}
 					</li>
 					{{/if}}
