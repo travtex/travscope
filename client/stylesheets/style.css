@@ -28,6 +28,11 @@ body {
 	position: relative;
 	opacity: 1;
 }
+
+.post-message {
+	padding: 4px 4px;
+	font-style: italic;
+}
 .post:before, .post:after {
 	content: "";
 	display: table; 
